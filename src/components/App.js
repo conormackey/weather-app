@@ -8,7 +8,7 @@ const App = () => {
 
   const handleSearch = async (city) => {
     const API_KEY = "403c3ecccf470f1d9a2609b11cb21246"; // Replace with your actual OpenWeatherMap API key
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`;
 
     try {
       const response = await fetch(url);
@@ -21,6 +21,8 @@ const App = () => {
           condition: data.weather[0].main,
           windSpeed: data.wind.speed,
           humidity: data.main.humidity,
+          clouds: data.clouds.all,
+          pressure: data.main.pressure
         });
       } else {
         alert(data.message);
