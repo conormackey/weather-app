@@ -1,8 +1,10 @@
 import React from "react";
+import WeatherVisualizer from './WeatherVisualizer';
 
 const WeatherCard = ({ data }) => {
   return (
     <div className="weather-card">
+      <WeatherVisualizer data={data} />
       <h2>{data.city}</h2>
       <p>{data.condition}</p>
       <p>Temperature: {data.temperature}°F</p> {/* Changed to Fahrenheit */}
