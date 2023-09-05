@@ -1,0 +1,30 @@
+
+/* General styles */
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+/* SearchBar styles */
+.searchbar-container {
+  margin-bottom: 20px;
+}
+
+.searchbar-container input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.searchbar-container button {
+  padding: 10px 20px;
+}
+
+/* WeatherCard styles */
+.weather-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
